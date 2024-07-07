@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+    <!-- Add OpenCV -->
+    <script async src="Resources/opencv.js" onload="openCvReady()"></script>
+    <!-- Link to the css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Add fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main page -->
+    <div class="main-page">
+        <!-- _______________Side line______________ -->
+        <div class="side-line">
+
+        </div>
+        <!-- _______________Side bar______________ -->
+        <div class="side-bar">
+            <span class="circle" id="button-rgb"><i class="material-icons" style="font-size: 36px; color: white;">palette</i></span>
+            <span class="circle" id="button-gray"><i class="material-icons" style="font-size: 36px; color: white;">contrast</i></span>
+            <span class="circle" id="button-blur"><i class="material-icons" style="font-size: 36px; color: white;">blur_on</i></span>
+            <span class="circle" id="button-edge"><i class="material-icons" style="font-size: 36px; color: white;">grade</i></span>
+            <span class="circle blue-circle"><i class="material-icons" style="font-size: 36px; color: white;">videocam</i></span>
+        </div>
+        <!-- _______________Right panel______________ -->
+        <div class="right-panel">
+            <!-- _______________Header______________ -->
+            <div class="header">
+                <div class="empty-side"></div>
+                <h1>CV Web</h1>
+                <div class="logo-container"><img src="Resources/Template/Logo.png" alt="" width="120px"></div>
+            </div>
+            <!-- _______________Tablet container______________ -->
+            <div class="tablet-container">
+                <img id="tablet-image" src="Resources/Template/tablet.png" width="800" height="500" alt="">
+                <canvas id="main-canvas" width="800" height="520">
+                    <img id="img-main" width="750" height="460" src="Resources/Template/car.png" alt="">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link the js file -->
+    <script src="main.js"></script>
+</body>
+</html>
